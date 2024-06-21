@@ -14,7 +14,9 @@ interface Props {
 
 <a
   class="group block rounded-xl outline-none ring-zinc-500 transition duration-300 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none"
-  href={recentBlogLocale !== "" ? `/${recentBlogLocale}/blog/${blogEntry.slug}/` : `/blog/${blogEntry.slug}/`}
+  href={recentBlogLocale !== ""
+    ? `/${recentBlogLocale}/blog/${blogEntry.slug}/`
+    : `/blog/${blogEntry.slug}/`}
   data-astro-prefetch
 >
   <div>
@@ -27,7 +29,7 @@ interface Props {
     />
     <!-- The title of the blog post -->
     <h3
-      class="mt-2 text-balance text-lg font-medium text-neutral-800 group-hover:text-orange-400 dark:text-neutral-300 dark:group-hover:text-neutral-50"
+      class="mt-2 text-balance text-lg font-medium text-neutral-800 group-hover:text-red-400 dark:text-neutral-300 dark:group-hover:text-neutral-50"
     >
       {blogEntry.data.title}
     </h3>

@@ -38,7 +38,7 @@ const config = {
               {config.subTitle}
               <!-- Button that, when clicked, opens the login modal -->
               <button
-                class="rounded-lg p-1 font-medium text-orange-400 decoration-2 outline-none ring-zinc-500 hover:underline focus-visible:ring dark:text-orange-400 dark:ring-zinc-200 dark:focus:outline-none"
+                class="rounded-lg p-1 font-medium text-red-400 decoration-2 outline-none ring-zinc-500 hover:underline focus-visible:ring dark:text-red-400 dark:ring-zinc-200 dark:focus:outline-none"
                 data-hs-overlay={config.loginBtnDataHS}
               >
                 {config.loginBtn}
@@ -51,7 +51,7 @@ const config = {
             <form>
               <div class="grid gap-y-4">
                 <!-- Email input field imported from EmailInput component -->
-                <EmailInput id="recover-email" errorId="recover-email-error"/>
+                <EmailInput id="recover-email" errorId="recover-email-error" />
                 <!-- Reset password button imported from AuthBtn component -->
                 <AuthBtn title="Reset password" />
               </div>
